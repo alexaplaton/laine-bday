@@ -1,0 +1,14 @@
+services:
+  # nextjs:
+  #   build: ./frontend
+  #   ports:
+  #     - "3000:3000"
+
+  flask-api:
+    build: ./backend
+    ports:
+      - "5900:5000"
+    volumes:
+      - ./backend:/backend
+    environment:
+      - FLASK_APP=index.py

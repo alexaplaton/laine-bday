@@ -9,7 +9,7 @@ CORS(app)
 @app.route("/")
 def home():
     res = {
-        "res": "Hello, Flask! Happy Two Years!"
+        "res": "Hello, Flask! Happy Birthday Laine!"
     }
     return jsonify(res)
 
